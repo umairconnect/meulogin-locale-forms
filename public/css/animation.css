@@ -1,0 +1,173 @@
+.LoginItemContainer {
+    width: 368px;
+    height: 474px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: #161518
+}
+
+.LoginItemContainer.loading {
+    cursor: default
+}
+
+.LoginItemContainer .LoginItemContainer__BackgroundLayer,
+.LoginItemContainer .LoginItemContainer__Content {
+    width: 100%;
+    height: 100%;
+    border-radius: 26px
+}
+
+.LoginItemContainer .LoginItemContainer__BackgroundLayer {
+    position: absolute;
+    background: linear-gradient(116.34deg, #ffbc5b, #ff2d55 50.52%, #c640cd);
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    transition: transform .3s ease, box-shadow .3s ease;
+    transform: scale(.92, .94)
+}
+
+.LoginItemContainer:hover .LoginItemContainer__BackgroundLayer {
+    transform: scale(1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, .5)
+}
+
+.LoginItemContainer .LoginItemContainer__BackgroundLayer:before {
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ecebed;
+    border-radius: 24px;
+    border: 4px solid #fff
+}
+
+.LoginItemContainer .LoginItemContainer__Content {
+    background-color: #ecebed;
+    border-radius: 24px;
+    width: 340px;
+    height: 448px;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 30px;
+    overflow: hidden
+}
+
+.LoginItemContainer .LoginItemContainer__Content h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    transform: translate(-3px, 50px);
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform .3s ease
+}
+
+.LoginItemContainer.hover .LoginItemContainer__Content h2,
+.LoginItemContainer:hover .LoginItemContainer__Content h2 {
+    transform: translate(-3px, 40px)
+}
+
+.LoginItemContainer .LoginItemContainer__Content p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    color: #161518;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 40px;
+    transform: translateY(360px);
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    transition: transform .3s ease
+}
+
+.LoginItemContainer.hover .LoginItemContainer__Content p,
+.LoginItemContainer:hover .LoginItemContainer__Content p {
+    transform: translateY(290px)
+}
+
+.LoginItemContainer__Content h2 {
+    color: rgba(0, 0, 0, .55);
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.LoginItemContainer .LoginItemContainer__Content img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(11px, 60px);
+    transition: transform .3s ease
+}
+
+.LoginItemContainer.hover .LoginItemContainer__Content img,
+.LoginItemContainer:hover .LoginItemContainer__Content img {
+    transform: translate(11px, 25px)
+}
+
+.LoginItemContainer .LoginItemContainer__Content .ui.button {
+    position: absolute!important;
+    opacity: 0!important;
+    border-radius: 12px;
+    bottom: 30px;
+    transition: opacity .3s ease;
+    width: 280px;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: none;
+    height: 56px
+}
+
+.LoginItemContainer.hover .LoginItemContainer__Content .ui.button,
+.LoginItemContainer:hover .LoginItemContainer__Content .ui.button {
+    opacity: 1!important
+}
+
+.LoginItemContainer.hover .LoginItemContainer__Content .ui.button:disabled,
+.LoginItemContainer:hover .LoginItemContainer__Content .ui.button:disabled {
+    opacity: .5!important
+}
+
+.ui.button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #ff2d55;
+    color: #ececee;
+    font-family: Lato, helvetica neue, Arial, Helvetica, sans-serif;
+    margin: 0 .25em 0 0;
+    padding: .78571429em 1.5em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: opacity .1s ease, background-color .1s ease, color .1s ease, box-shadow .1s ease, background .1s ease;
+    will-change: "";
+    -webkit-tap-highlight-color: transparent
+}
+
+.ui.huge.button,
+.ui.huge.buttons .button,
+.ui.huge.buttons .or {
+    font-size: 1.42857143rem
+}

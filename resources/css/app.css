@@ -1,0 +1,10 @@
+label {
+    margin: 5px 0px;
+}
+.btn-default {
+    width: 100%;
+    background: red;
+    color: white;
+    margin: 1rem 0;
+    font-weight: bold;
+}
